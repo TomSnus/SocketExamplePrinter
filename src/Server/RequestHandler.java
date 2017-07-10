@@ -38,7 +38,7 @@ public class RequestHandler implements Runnable{
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+
 
     }
 

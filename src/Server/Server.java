@@ -19,10 +19,11 @@ public class Server {
 
         ServerSocket socket = new ServerSocket(1099);
         new Thread(new PrinterRefiller(printer)).start();
+        System.out.println("Printer running...");
         while (true) {
             try {
                 Socket s = socket.accept();
-
+                System.out.println("New assignment");
                 new Thread(new RequestHandler(s, printer)).start();
 
             } catch (Exception e) {

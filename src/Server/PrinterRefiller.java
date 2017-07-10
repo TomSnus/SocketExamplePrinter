@@ -17,10 +17,12 @@ public class PrinterRefiller implements Runnable{
 
     @Override
     public void run() {
+        System.out.println("Printrefiller started...");
         try {
             while (true) {
                 printer.refillPaper();
-                TimeUnit.SECONDS.wait(3);
+
+
             }
 
         } catch (InterruptedException e) {

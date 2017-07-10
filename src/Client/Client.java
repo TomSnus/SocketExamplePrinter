@@ -21,7 +21,7 @@ public class Client {
             OutputStream outputStream = socket.getOutputStream();
 
             PrintWriter writer = new PrintWriter(outputStream);
-            writer.println(40);
+            writer.println(200);
             writer.flush();
 
 
