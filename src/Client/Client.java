@@ -24,6 +24,7 @@ public class Client {
             writer.println(40);
             writer.flush();
 
+
         } catch (UnknownHostException e) {
             e.printStackTrace();
         } catch (IOException e) {

@@ -18,7 +18,7 @@ public class Server {
 
 
         ServerSocket socket = new ServerSocket(1099);
-
+        new Thread(new PrinterRefiller(printer)).start();
         while (true) {
             try {
                 Socket s = socket.accept();
